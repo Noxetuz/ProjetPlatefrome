@@ -46,12 +46,12 @@ flowchart TD
 - Arduino Uno R3
 
 ### Broches utilisées (peut-être)
-Broche A1-A4
-Broche A5-A8 (moteur)
+- Broche A1-A4
+- Broche A5-A8 (moteur)
 
 ### Répartition des tâches
-Pour la construction de la machine : L'ensemble de l'équipe
-Pour les fonctionnalités: Dépendront des compétences de l'équipe 
+- Pour la construction de la machine : L'ensemble de l'équipe
+- Pour les fonctionnalités: Dépendront des compétences de l'équipe 
 
 
 
