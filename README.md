@@ -49,6 +49,7 @@ flowchart TB
     L298 --> MG
     L298 --> MD
 
+```
 ### Liste des composants
 - Chassis 2pcs
 - Wheel 4pcs
