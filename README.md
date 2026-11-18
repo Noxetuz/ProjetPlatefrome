@@ -31,6 +31,24 @@ flowchart TD
     C --> D
     D --> A
 ```
+## Schéma électronique
+
+```mermaid
+flowchart TB
+    BAT["Batterie"]
+    UNO["Arduino UNO"]
+    US["Capteur HC-SR04"]
+    L298["Pilote moteur L298N"]
+    MG["Moteur gauche"]
+    MD["Moteur droit"]
+
+    BAT -->|"Alimentation"| L298
+    BAT -->|"Alimentation régulée"| UNO
+    US -->|"TRIG / ECHO"| UNO
+    UNO -->|"Commande"| L298
+    L298 --> MG
+    L298 --> MD
+
 ### Liste des composants
 - Chassis 2pcs
 - Wheel 4pcs
