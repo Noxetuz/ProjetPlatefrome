@@ -38,7 +38,6 @@ flowchart TD
 - DC Gear Motor 4pcs
 - Battery container 1pcs
 - Fastener 8pcs
-- 4 Infrared Avoidance Module
 - HC-SR04 2022 Ultrasound Sensor
 - L298N dual H-bridge motor driver module
 - Sensor Shield v5.0
@@ -46,8 +45,8 @@ flowchart TD
 - Arduino Uno R3
 
 ### Broches utilisées (peut-être)
-- Broche A1-A4
-- Broche A5-A8 (moteur)
+- Broche A1-A2 (senseur ultrasons)
+- Broche A3-A6 (moteur)
 
 ### Répartition des tâches
 - Pour la construction de la machine : L'ensemble de l'équipe
