@@ -1,8 +1,8 @@
 from machine import Pin, time_pulse_us
 import time
  
-trig = Pin(5, Pin.OUT)   # envoie le signal
-echo = Pin(18, Pin.IN)   # reçoit l'écho
+trig = Pin(5, Pin.OUT)   # (D2) envoie le signal
+echo = Pin(18, Pin.IN)   # (D9) reçoit l'écho
  
 while True:
     # 1. Envoyer une impulsion de 10 microsecondes
