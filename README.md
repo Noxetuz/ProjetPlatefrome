@@ -55,17 +55,26 @@ flowchart TB
 - Wheel 4pcs
 - Velocimetry Code Wheel 4pcs
 - DC Gear Motor 4pcs
-- Battery container 1pcs
+- Conteneur de batteries pour 6 AA batteries 1pcs
+- Conteneur de batteries pour 3 AA batteries 1pcs
 - Fastener 8pcs
 - HC-SR04 2022 Ultrasound Sensor
+- Keyestudio TEMT6000 Ambient Light Sensor Module
 - L298N dual H-bridge motor driver module
-- Sensor Shield v5.0
-- Tower Pro SG90 Micro Servo
-- Arduino Uno R3
+- Arduino nano ESP32 
+- Keyestudio LED Module (led lanche) x 2
+- Keyestudio RGB LED (led RGB)
+- Keyestudio Digital Push Button Switch Module (Boutton pousoir)
+- Keyestudio VR sensor (Potentiometre)
 
-### Broches utilisées (peut-être)
+### Broches utilisées (Prelimaires)
 - Broche A1-A2 (senseur ultrasons)
-- Broche A3-A6 (moteur)
+- Broche A3-A4 (senseur de luminosité)
+- Broche A5 (potentiometre)
+- Broche D2 (bouton)
+- Broche D2-D5 (moteur)
+- Broche D6 (led rgb)
+- Broche D7-D8 (led blanches)
 
 ### Répartition des tâches
 - Pour la construction de la machine : L'ensemble de l'équipe
