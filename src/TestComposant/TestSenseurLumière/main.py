@@ -10,7 +10,7 @@ while True:
 
     valeur = capteur.read_u16()            # nombre entre 0 et 65535
 
-    pourcentage = valeur * 100 / 65535     # converti en %
+    pourcentage = valeur * 100 / 65535     # converti en % stat
  
     print("Lumiere :", valeur, "->", round(pourcentage), "%")
  
