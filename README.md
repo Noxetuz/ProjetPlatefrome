@@ -63,7 +63,7 @@ flowchart TB
 - Tower Pro SG90 Micro Servo
 - Arduino Uno R3
 
-### Broches utilisées (peut-être)
+### Broches utilisées (possiblement)
 - Broche A1-A2 (senseur ultrasons)
 - Broche A3-A6 (moteur)
 
