@@ -34,20 +34,42 @@ flowchart TD
 ## Schéma électronique
 
 ```mermaid
-flowchart TB
-    BAT["Batterie"]
-    UNO["Arduino UNO"]
-    US["Capteur HC-SR04"]
-    L298["Pilote moteur L298N"]
-    MG["Moteur gauche"]
-    MD["Moteur droit"]
+flowchart LR
+    BAT9["Batteries 6×AA<br/>(9 V)"]
+    BAT45["Batteries 3×AA<br/>(4,5 V)"]
+    ESP["Arduino Nano ESP32"]
+    L298["L298N<br/>pont en H"]
+    MG["Moteurs gauche ×2"]
+    MD["Moteurs droite ×2"]
+    US["HC-SR04<br/>ultrasons"]
+    LUM["TEMT6000<br/>luminosité"]
+    POT["Potentiomètre"]
+    BTN["Bouton poussoir"]
+    RGB["DEL RGB"]
+    LED1["DEL blanche 1"]
+    LED2["DEL blanche 2"]
+ 
+    BAT9 -->|"+9 V → 12V"| L298
+    BAT9 -->|"+9 V → VIN"| ESP
+    BAT45 -->|"+4,5 V → VCC"| US
+ 
+    ESP -->|"D2 → IN1, D3 → IN2"| L298
+    ESP -->|"D4 → IN3, D5 → IN4"| L298
+    L298 -->|"OUT1 / OUT2"| MG
+    L298 -->|"OUT3 / OUT4"| MD
+ 
+    ESP -->|"A1 → Trig"| US
+    US -->|"Echo → A2"| ESP
+ 
+    LUM -->|"SIG → A3"| ESP
+    POT -->|"S → A5"| ESP
+    BTN -->|"S → D12"| ESP
+    ESP -->|"D6 / D9 / D10 → R / G / B"| RGB
+    ESP -->|"D7"| LED1
+    ESP -->|"D8"| LED2
+```
+ 
 
-    BAT -->|"Alimentation"| L298
-    BAT -->|"Alimentation régulée"| UNO
-    US -->|"TRIG / ECHO"| UNO
-    UNO -->|"Commande"| L298
-    L298 --> MG
-    L298 --> MD
 
 ```
 ### Liste des composants
